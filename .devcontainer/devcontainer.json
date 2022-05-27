@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/julia
+// See https://github.com/julia-vscode/julia-devcontainer/blob/master/Dockerfile for image contents
+{
+	"name": "Julia",
+	"image": "afrouzi/juliapy:jl_packed",
+	"postCreateCommand": "bash ./.devcontainer/postcreate.sh",
+	"remoteUser": "afrouzi",
+	"extensions": [
+		"aaron-bond.better-comments",
+		"sashaweiss.block-travel",
+		"streetsidesoftware.code-spell-checker",
+		"eamodio.gitlens",
+		"ms-toolsai.jupyter-renderers",
+		"Gruntfuggly.todo-tree"
+	]
+}
